@@ -42,19 +42,32 @@ table {
   border-collapse: collapse;
   border: 2px solid #343a40;
   position: relative;
-  left: 400px;
+  left: 420px;
   top: 10px;
-  width: 100%;
+  width: 95%;
+}
+
+td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #343a40;
+  font-size: 100%;
+  margin-left: 2%;
 }
 
 button {
   margin-left: 40%;
   font-family: inherit;
-  font-size: 150%;
+  font-size: 140%;
   line-height: inherit;
   position: relative;
   left: 250px;
   top: 35px;
+  background-color: #6f42c1;
+  color: #fff;
+  border: ridge;
+  border-color: #343a40;
+  cursor: pointer;
 }
 
 input{
@@ -114,35 +127,37 @@ button::-moz-focus-inner,
         <form action="results.html" method="GET">
 
         <table border="3">
-            <tr style= "border: 2px solid #343a40;"><!--row1_single line textfield-->
-                <td><label for ="name_" style="font-size:200%;">Name:</label></td><!--col1-->
-                <td><input type="text" id="name_" name="My_name" required style="width: 95%;"></td> <!--col2-->
-            </tr>
-
-            <tr> <!--row2_Radio Button-->
-                <td style="font-size:200%;">Gender</td>
-                <td><input type="radio" name="gender" value ="male" style="margin-left: 3%; font-size: 200%;">Male
-                    <br>
-                    <input type="radio" name="gender" value="female" checked style="margin-left: 3%; font-size: 200%">Female</td>
+            <tr><!--row1_single line textfield-->
+                <td><label for ="name_">Name</label></td><!--col1-->
+                <td><input type="text" id="name_" name="Name" required style="width: 95%;"></td> <!--col2-->
             </tr>
 
             <tr>
-                <td style="font-size:200%;">Payment Method</td>
-                <td><input type="checkbox" name="Payment Method" value="Cash Delivery" style="margin-left: 3%;">Cash Delivery
-                    <br>
-                    <input type="checkbox" name="Payment Method" value="Online Booking" style="margin-left: 3%;">Online Booking
-                    <br>
-                    <input type="checkbox" name="Payment Method" value="Mastercard/Visa" style="margin-left: 3%;">Mastercard/VISA</td>
+              <td><label>Address</label></td>
+              <td><textarea name="Address" rows="10" cols="65" style="margin-left: 3%; margin-top: 2%"></textarea></td>
             </tr>
 
             <tr>
-                <td><label style="font-size:200%;">Address</label></td>
-                <td><textarea name="Address" rows="10" cols="30" style="margin-left: 3%;"></textarea></td>
-            </tr>
+              <td style="font-weight: bold">Items</td>
+              <td><input type="checkbox" name="Items" value="Cash Delivery" style="margin-left: 3%;">Bread
+                  <br>
+                  <input type="checkbox" name="Items" value="Online Booking" style="margin-left: 3%;">Kuih-Muih
+                  <br>
+                  <input type="checkbox" name="Items" value="Mastercard/Visa" style="margin-left: 3%;">Kek Lapis</td>
+          </tr>
 
             <tr>
-                <td><label for="email" style="font-size:200%;">Enter email</label></td>
-                <td><input type="email" id="email" name="email"></td>
+              <td style="font-weight: bold">Payment Method</td>
+              <td><input type="checkbox" name="Payment Method" value="Cash Delivery" style="margin-left: 3%;">Cash Delivery
+                  <br>
+                  <input type="checkbox" name="Payment Method" value="Online Booking" style="margin-left: 3%;">Online Banking
+                  <br>
+                  <input type="checkbox" name="Payment Method" value="Mastercard/Visa" style="margin-left: 3%;">Mastercard/VISA</td>
+          </tr>
+
+            <tr>
+                <td><label for="email">Enter email</label></td>
+                <td><input type="email" id="email" name="Email"></td>
             </tr>
 
 
