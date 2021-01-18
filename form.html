@@ -10,15 +10,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <style>
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
   background-color: rgb(208, 171, 238);
+  width: 50%;
 }
 
 h1 {
@@ -43,21 +44,27 @@ table {
   position: relative;
   left: 400px;
   top: 10px;
-  width: 50%;
+  width: 100%;
 }
 
 button {
-  margin: 0;
+  margin-left: 40%;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 150%;
   line-height: inherit;
   position: relative;
-  left: 1070px;
-  top: 15px;
+  left: 250px;
+  top: 35px;
 }
 
 input{
-  margin-left: 2%;
+  margin-left: 3%;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+textarea {
+  margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -114,51 +121,23 @@ button::-moz-focus-inner,
 
             <tr> <!--row2_Radio Button-->
                 <td style="font-size:200%;">Gender</td>
-                <td><input type="radio" name="gender" value ="male"> Male
+                <td><input type="radio" name="gender" value ="male" style="margin-left: 3%; font-size: 200%;">Male
                     <br>
-                    <input type="radio" name="gender" value="female" checked>Female</td>
+                    <input type="radio" name="gender" value="female" checked style="margin-left: 3%; font-size: 200%">Female</td>
             </tr>
 
             <tr>
                 <td style="font-size:200%;">Payment Method</td>
-                <td><input type="checkbox" name="payment method" value="cash delivery">Cash Delivery
+                <td><input type="checkbox" name="Payment Method" value="Cash Delivery" style="margin-left: 3%;">Cash Delivery
                     <br>
-                    <input type="checkbox" name="payment method" value="online booking">Online Booking
+                    <input type="checkbox" name="Payment Method" value="Online Booking" style="margin-left: 3%;">Online Booking
                     <br>
-                    <input type="checkbox" name="payment method" value="mastercard/visa">Mastercard/VISA</td>
-            </tr>
-
-            <tr>
-                <td style="font-size:200%;">State</td>
-                <td><select name="state">
-                    <option value="Sarawak">Sarawak</option>
-                    <option value="Johor">Johor</option>
-                    <option value="Kedah">Kedah</option>
-                    <option value="Kelantan">Kelantan</option>
-                    <option value="Melaka">Melaka</option>
-                    <option value="NegeriSembilan">Negeri Sembilan</option>
-                    <option value="Pahang">Pahang</option>
-                    <option value="Perak">Perak</option>
-                    <option value="Perlis">Perlis</option>
-                    <option value="Sabah">Sabah</option>
-                    <option value="Selangor">Selangor</option>
-                    <option value="Terengganu">Terengganu</option>
-                </select></td>
-            </tr>
-
-            <tr>
-                <td><label for="faculty_" style="font-size:200%;">Choose Faculty</label></td>
-                <td><input list="faculty_list" name="faculty" id="faculty_">
-                    <datalist id="faculty_list">
-                        <option value="FSKPM">
-                        <option value="FSGk">
-                        <option value="FK"></option>
-                    </datalist></td>
+                    <input type="checkbox" name="Payment Method" value="Mastercard/Visa" style="margin-left: 3%;">Mastercard/VISA</td>
             </tr>
 
             <tr>
                 <td><label style="font-size:200%;">Address</label></td>
-                <td><textarea name="description" rows="10" cols="30"></textarea></td>
+                <td><textarea name="Address" rows="10" cols="30" style="margin-left: 3%;"></textarea></td>
             </tr>
 
             <tr>
