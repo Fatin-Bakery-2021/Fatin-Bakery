@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fatin-Bakery 2021</title>
+    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: rgb(208, 171, 238);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 3.5rem;
+  position: relative;
+  left: 500px;
+  top: 25px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 30px;
+  position: relative;
+  left: 550px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #343a40;
+  position: relative;
+  left: 400px;
+  top: 10px;
+  width: 50%;
+}
+
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  position: relative;
+  left: 1070px;
+  top: 15px;
+}
+
+input{
+  margin-left: 2%;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+    </style>
+
+    <body>
+        <h1>Welcome to The Customer Form!</h1>
+        <p><u>Please do fill up the form below!</u></p>
+
+        <form action="results.html" method="GET">
+
+        <table border="3">
+            <tr style= "border: 2px solid #343a40;"><!--row1_single line textfield-->
+                <td><label for ="name_" style="font-size:200%;">Name:</label></td><!--col1-->
+                <td><input type="text" id="name_" name="My_name" required style="width: 95%;"></td> <!--col2-->
+            </tr>
+
+            <tr> <!--row2_Radio Button-->
+                <td style="font-size:200%;">Gender</td>
+                <td><input type="radio" name="gender" value ="male"> Male
+                    <br>
+                    <input type="radio" name="gender" value="female" checked>Female</td>
+            </tr>
+
+            <tr>
+                <td style="font-size:200%;">Payment Method</td>
+                <td><input type="checkbox" name="payment method" value="cash delivery">Cash Delivery
+                    <br>
+                    <input type="checkbox" name="payment method" value="online booking">Online Booking
+                    <br>
+                    <input type="checkbox" name="payment method" value="mastercard/visa">Mastercard/VISA</td>
+            </tr>
+
+            <tr>
+                <td style="font-size:200%;">State</td>
+                <td><select name="state">
+                    <option value="Sarawak">Sarawak</option>
+                    <option value="Johor">Johor</option>
+                    <option value="Kedah">Kedah</option>
+                    <option value="Kelantan">Kelantan</option>
+                    <option value="Melaka">Melaka</option>
+                    <option value="NegeriSembilan">Negeri Sembilan</option>
+                    <option value="Pahang">Pahang</option>
+                    <option value="Perak">Perak</option>
+                    <option value="Perlis">Perlis</option>
+                    <option value="Sabah">Sabah</option>
+                    <option value="Selangor">Selangor</option>
+                    <option value="Terengganu">Terengganu</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="faculty_" style="font-size:200%;">Choose Faculty</label></td>
+                <td><input list="faculty_list" name="faculty" id="faculty_">
+                    <datalist id="faculty_list">
+                        <option value="FSKPM">
+                        <option value="FSGk">
+                        <option value="FK"></option>
+                    </datalist></td>
+            </tr>
+
+            <tr>
+                <td><label style="font-size:200%;">Address</label></td>
+                <td><textarea name="description" rows="10" cols="30"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="email" style="font-size:200%;">Enter email</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+
+
+        </table>
+
+
+            <!--Submit reset button-->
+            <button input type ="reset" class= "button" value="Reset">Reset</button>
+            <button type="submit" class= "button" value="Next">Next</button>
+
+        </form>
+
+        
+    </body>
+</html>
