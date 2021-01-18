@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <h1>Results</h1>
+    <div id="results"></div>
+    <a href="Lab1.html">Back to Form</a>
+
+    <script>
+        const resultslist = document.getElementById('results') 
+        new URLSearchParams(window.location.search).forEach((value,name)=>
+        {
+        resultslist.append(`${name}: ${value}`)
+        resultslist.append(document.createElement('br'))
+        })
+    </script>
+</body>
+</html>
