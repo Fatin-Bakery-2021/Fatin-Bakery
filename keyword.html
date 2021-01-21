@@ -4,87 +4,11 @@
   <title>KEYWORD</title>
 </head>
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #343a40;
-  width: 55%;
-}
-
-li {
-  float: left;
-  border-right:1px solid #bbb;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #17a2b8;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #6c757d;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: #f8f9fa;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-</style>
-
-<style>
 * {
   box-sizing: border-box;
 }
 
 #myInput {
-  background-image: url('/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
   width: 40%;
@@ -93,8 +17,8 @@ li a:hover:not(.active) {
   border: 2px solid #343a40;
   margin-bottom: 12px;
   position: relative;
-  left: 58%;
-  bottom: 46px;
+  left: 0%;
+  bottom: 0px;
   
 }
 
@@ -112,7 +36,8 @@ li a:hover:not(.active) {
   text-decoration: none;
   font-size: 18px;
   color: black;
-  display: block
+  display: block;
+  width: 40%;
 }
 
 #myUL li a:hover:not(.header) {
@@ -121,22 +46,14 @@ li a:hover:not(.active) {
 </style>
 <body>
 
-  <ul>
-    <li><a href="#home">HOME</a></li>
-    <li><a href="#news">NEWS</a></li>
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">INFOS</a>
-      <div class="dropdown-content">
-        <a href="#">ITEMS DISPLAY</a>
-        <a href="#">STATISTIC</a>
-        <a href="#">SHOP</a>
-      </div>
-      <li><a href="#news">ABOUT ME</a></li>
-      <li><a href="#news">CONTACT US</a></li>
-    </li>
-  </ul>
-
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Cake</a></li>
+  <li><a href="#">Bread</a></li>
+
+  <li><a href="#">Kuih-Muih</a></li>
+</ul>
 
 <script>
 function myFunction() {
