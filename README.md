@@ -1,2 +1,2 @@
 # Fatin-Bakery
-This is group assignment for Fatin's bakery business 2021
+This is web programming group assignment for FATIN's BAKERY BUSINESS 2021
